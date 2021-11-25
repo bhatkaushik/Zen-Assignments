@@ -35,6 +35,8 @@ for (const [key, value] of Object.entries(object)) {
   });
 
  2.Create your own resume data in JSON format 
+ 
+ Ans;
   
 // my resume using json
  let resume={
