@@ -1,0 +1,91 @@
+// Day 3 Assignment
+
+1.For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+Ans:
+// json to be iterated
+const object = {
+     name:"kaushik",
+    college:"Banglore institue of technology",
+    rollno: 47,
+  branch:"Civil Engineering"
+}
+
+//  iterating using for in
+for (let property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+
+// iterating using for
+for(let i=0;i<2;i++)
+{console.log(`Name : ${object.name},
+college: ${object.college},
+roll no : ${object.rollno},
+branch : ${object.branch} `)   
+}
+
+// iterating using for of
+for (const [key, value] of Object.entries(object)) {
+    console.log(`${key}: ${value}`);
+  }
+
+//   iterating using for each loop
+  Object.keys(object).forEach(function(key) {
+    console.log(key, object[key]);
+  });
+
+ 2.Create your own resume data in JSON format 
+  
+// my resume using json
+ let resume={
+  "intro": {
+      "name": "Kaushik Bhat",
+      "email": "kaushikgb99@gmail.com",
+      "phone": 9110691605,
+      "degree": "B-tech(Civil Engineering",
+      "summary": "To Secure a responsible career oppurtinty to fully utilize my training and skills,while making significant contribution to the success of the organisation",
+      "location": {
+        "address": "Kannika mahal -J P Nagar",
+        "postalCode":560078,
+        "city": "Bangalore",
+        "country":"India",
+        "State": "Karnataka"
+      },
+      "profiles": [
+        {
+          "network": "A social media or other profile that you would like to include (e.g. LinkedIn, Twitter)",
+          "username": "Your username on this network",
+          "url": "A URL to your user profile page"
+        }
+      ]
+    },
+    "education": [
+      {
+        "institution": "Bangalore Institute of Technology",
+        "Branch": "Civil Engineering",
+        "startDate": "1-8-2017",
+        "endDate": "1-7-2021",
+        "gpa": "7.5",
+      }
+    ],
+    "skills": [
+      {
+        "name": "programming languages",
+        "level": "basic",
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "professional fluency"
+      }
+    ],
+    "interests": [
+      {
+        "name": "music"
+      }
+    ]
+  }
+
+  console.log(resume);
+
