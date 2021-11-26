@@ -1,0 +1,94 @@
+Day 4 Assignment
+
+1.Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console
+Ans
+//Set up Http Request
+var xhr = new XMLHttpRequest();
+
+//create and send Get request
+//GET,POST,PUT,DELETE,
+// Second =>ENdpoint of the url:server url
+xhr.open("GET", "https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json");
+// set up our listener to process the request
+xhr.onload = function () {
+  //process the request and server will return the data
+  if (xhr.status >= 200 && xhr.status < 300) {
+    var t = JSON.parse(this.response);
+    // console.log(t);
+    // document.write(t);
+    for(i=0;i<t.length;i++)
+    {
+        console.log(` the flag of ${t[i].name} is ${t[i].flag}`);
+    }
+  } else {
+    //it should not give you data
+    console.log("Data is not available");
+    // document.write(t);
+  }
+};
+
+xhr.send();
+
+2. Use the same rest countries and print all countries name, region, sub region and population
+Ans;
+//Set up Http Request
+var xhr = new XMLHttpRequest();
+
+//create and send Get request
+//GET,POST,PUT,DELETE,
+// Second =>ENdpoint of the url:server url
+xhr.open("GET", "https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json");
+// set up our listener to process the request
+xhr.onload = function () {
+  //process the request and server will return the data
+  if (xhr.status >= 200 && xhr.status < 300) {
+    var t = JSON.parse(this.response);
+    console.log(t);
+    // document.write(t);
+    for(i=0;i<t.length;i++)
+    {
+        console.log(`
+        Name : ${t[i].name} ,
+        Region : ${t[i].region},
+        Sub-Region : ${t[i].subregion},
+        Population : ${t[i].population} .   `)   
+ 
+  }
+}
+   else {
+    //it should not give you data
+    console.log("Data is not available");
+    // document.write(t);
+  }
+};
+
+xhr.send();
+
+
+3.How to compare two JSON have the same properties without order?
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+
+Ans.  by using _.isEqual function we can compare two json having same property without order.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = 
+"https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js">
+   </script>
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+
+console.log(_.isEqual(obj1, obj2));
+    </script>
+
+</body>
+</html>
