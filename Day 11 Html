@@ -37,24 +37,40 @@ Ans. <html lang="en">
     
     3. need to be completed
     
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            border: 2px black solid;
+            padding: 5px;
+            width: 450px;
+            font-size: 20px;
+            background-color: whitesmoke;
+        }
+        input{
+            font-size: 15px;
+        }
+        label{
+        margin-left: 80px;
+        }
+    </style>
 </head>
 <body>
-        <p>CONTACT US</p>
-        
-    
-          <input type="text" placeholder="Your Name" class="input"><br><br>
-          <input type="text" placeholder="Your Email Address" class="input"><br><br>
-          <input type="text" placeholder="Subject" class="input"><br><br>
-          <textarea  class="area" placeholder="Leave a Message"></textarea>
-        
-    
+    <form action="#">
+        <label for="form" >Form with all fields required</label>
+        <br><br>
+<input type="text" placeholder="first name" required>
+<input type="text" placeholder="last name" required><br><br>
+<input type="text" placeholder="email" required><br><br>
+<input type="text" placeholder="phone number" required><br><br>
+<input type="password" placeholder="password" required><br><br>
+<input type="submit" value="submit" required>
+</form>
 </body>
 </html>
 
@@ -177,4 +193,5 @@ ans.
     </table>
 </body>
 </html>
+
 
