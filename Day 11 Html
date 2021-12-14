@@ -133,6 +133,29 @@ ans.
 </body>
 </html>
 
+6.In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
+
+ans.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" >
+     <fieldset>
+      <label for="form">Employee Type :<input type="radio" /></label> 
+      <label for="sal">Salaried</label> 
+      <input type="radio" />
+        <label for="bus">Own Business</label>
+    </fieldset>
+    </form>
+</body>
+</html>
+
 8.Use the table tag to design given image Click here.
 ans.
 
