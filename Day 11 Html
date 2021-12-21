@@ -233,4 +233,40 @@ ans.
 </body>
 </html>
 
+11. Html Page with all types of input.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<br><br><label> button : </label><input type="button">
+<br><br><label> checkbox : </label><input type="checkbox">
+<br><br><label> color : </label><input type="color">
+<br><br><label> date : </label><input type="date">
+<br><br><label> datetime-local : </label><input type="datetime-local">
+<br><br><label> email : </label><input type="email">
+<br><br><label> file : </label><input type="file">
+<br><br><label> hidden : </label><input type="hidden">
+<br><br><label> image : </label><input type="image">
+<br><br><label> month : </label><input type="month">
+<br><br><label> number : </label><input type="number">
+<br><br><label> password : </label><input type="password">
+<br><br><label> radio : </label><input type="radio">
+<br><br><label> range : </label><input type="range">
+<br><br><label> reset : </label><input type="reset">
+<br><br><label> search : </label><input type="search">
+<br><br><label> submit : </label><input type="submit">
+<br><br><label> tel : </label><input type="tel">
+<br><br><label> text : </label><input type="text">
+<br><br><label> time : </label><input type="time">
+<br><br><label> url : </label><input type="url">
+<br><br><label> week : </label><input type="week">
+</body>
+</html>
+
 
